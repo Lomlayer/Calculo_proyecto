@@ -1,0 +1,225 @@
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Barra lateral */
+.sidebar {
+    height: 100vh; /* La barra lateral ocupa todo el alto de la pantalla */
+    width: 250px; /* Ancho de la barra lateral */
+    background-color: #2c3e50; /* Un tono más oscuro para la barra lateral */
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box; /* Asegura que padding no afecte al tamaño total */
+}
+
+.sidebar a {
+    color: #ecf0f1;
+    padding: 14px 20px;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #34495e;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.sidebar a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.sidebar .temario {
+    color: #ecf0f1;
+    padding: 14px 20px;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #34495e;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.sidebar .temario:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Contenido principal */
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #34495e;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ecf0f1;
+}
+
+.navbar .left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .left span {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: #ecf0f1;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #3498db;
+}
+
+/* Estilo para las tarjetas */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;  /* Reduzco el espacio entre tarjetas */
+}
+
+.card {
+    background-color: #2c3e50;
+    border-radius: 10px;
+    padding: 10px; /* Menos padding para hacer la tarjeta más compacta */
+    width: calc(25% - 15px); /* Reducir el ancho de cada tarjeta a un 25% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s;
+    font-size: 14px; /* Reduzco el tamaño de la fuente */
+    position: relative;
+    margin: 5px; /* Reduce el margen entre tarjetas */
+    color: #ecf0f1;
+}
+
+.card h3 {
+    color: #ecf0f1;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #ecf0f1;
+    margin-bottom: 8px;
+}
+
+.card a {
+    display: inline-block;
+    color: #007bff;
+    margin-top: 8px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Estilo para las imágenes dentro de las tarjetas */
+.card img {
+    max-width: 120px; /* Hago la imagen aún más pequeña */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centra la imagen */
+}
+
+/* Botón eliminar para Admin */
+.delete-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.3s;
+}
+
+.delete-btn img {
+    width: 16px;
+    height: 16px;
+}
+
+.delete-btn:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos para el botón de agregar nueva tarjeta */
+.add-button {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.add-button a {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.add-button a:hover {
+    background-color: #27ae60;
+}
+
+/* Estilo responsivo para móviles */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 15px); /* Dos tarjetas por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 568px) {
+    .card {
+        width: calc(100% - 15px); /* Una tarjeta por fila en pantallas más pequeñas */
+    }
+
+    .sidebar {
+        width: 75%;
+        height: auto;
+        position: static;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 22px;
+        color: #f0f0f0;
+        margin-left: 10px;
+    }
+
+    .sidebar a {
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}

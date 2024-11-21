@@ -1,0 +1,151 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .left span {
+    color: #f0f0f0;
+    font-size: 18px;
+}
+
+.navbar a {
+    color: #f0f0f0;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #444;
+}
+
+/* Tabla */
+table {
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #555;
+}
+
+th {
+    background-color: #444;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+td {
+    color: #bbb;
+    font-size: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #444;
+}
+
+tr:hover {
+    background-color: #555;
+}
+
+.acciones a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #5c85d6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.acciones a:hover {
+    background-color: #476ea1;
+}
+
+.acciones button {
+    padding: 5px 10px;
+    background-color: #5c85d6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.acciones button:hover {
+    background-color: #476ea1;
+}
+
+.acciones .delete-btn {
+    background-color: #dc3545;
+    border: none;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+
+.acciones .delete-btn:hover {
+    background-color: #c82333;
+}
+
+.acciones .delete-btn img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Mensajes de éxito y error */
+.message {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.success {
+    color: #28a745;
+}
+
+.error {
+    color: #dc3545;
+}
+
+/* Botón de Regreso al índice */
+.regresar-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 12px 20px;
+    background-color: #5c85d6;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.regresar-btn:hover {
+    background-color: #476ea1;
+}
