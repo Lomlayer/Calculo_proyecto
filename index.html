@@ -2,13 +2,40 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Redirigiendo...</title>
-    <script type="text/javascript">
-        // Redirigir inmediatamente a index.php
-        window.location.href = 'inicio s.php';
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirección a Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .redirect-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .redirect-button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <p>Redirigiendo a la página principal...</p>
+
+    <!-- Botón que redirige a inicio.php -->
+    <a href="inicio s.php" class="redirect-button">Ir a Inicio</a>
+
 </body>
 </html>
